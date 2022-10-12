@@ -13,7 +13,7 @@ const data = {
 	},
 };
 
-export const BootstrapCard = () => {
+export const BootstrapCard = (props) => {
 	return (
 		<div className="card m-5">
 			<img className="card-img-top" src={data.image} alt="Card image cap" />
@@ -29,4 +29,4 @@ export const BootstrapCard = () => {
 };
 
 //remember to use ReactDOM.render to include the component into the website
-ReactDOM.render(<BootstrapCard/>, document.querySelector("#myDiv"));
+ReactDOM.render(<BootstrapCard />, document.querySelector("#myDiv"));
